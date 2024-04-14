@@ -1,0 +1,36 @@
+linters:
+  enable-all: false
+  disable-all: true
+  enable:
+    - bodyclose
+    - containedctx
+    - deadcode
+    - depguard
+    - errcheck
+    - errorlint
+    - gocritic
+    - gocyclo
+    - gofmt
+    - goimports
+    - revive
+    - gosec
+    - gosimple
+    - govet
+    - ineffassign
+    - lll
+    - misspell
+    - nakedret
+    - nolintlint
+    - revive
+    - rowserrcheck
+    - staticcheck
+    - structcheck
+    - sqlclosecheck
+    - typecheck
+    - unconvert
+    - unparam
+    - unused
+    - varcheck
+
+run:
+  timeout: 5m

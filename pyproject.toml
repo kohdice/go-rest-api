@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "go-rest-api"
+version = "0.1.0"
+description = "The REST API consisting of Go, API Gateway, and Lambda."
+authors = ["kohdice <kohdice@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+awscli-local = "^0.22.0"
+terraform-local = "^0.18.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
