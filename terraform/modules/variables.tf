@@ -27,3 +27,8 @@ variable "lambda_function_name" {
   description = "Name of the Lambda function"
   type        = string
 }
+
+variable "api_gateway_resource_path" {
+  description = "Path to the API Gateway resource"
+  type        = string
+}

@@ -32,4 +32,15 @@ module "go-rest-api" {
   lambda_archive            = "lambda.zip"
   lambda_binary             = "cmd/lambda/bootstrap"
   lambda_function_name      = "go-rest-api"
+  api_gateway_resource_path = "lambda"
+}
+
+output "api_id" {
+  value       = module.go-rest-api.api_id
+  description = "The ID of API Gateway"
+}
+
+output "invoke_url" {
+  description = "The URL to invoke the REST API"
+  value       = module.go-rest-api.invoke_url
 }
